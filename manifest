@@ -1,0 +1,17 @@
+title=Church Hub
+major_version=1
+minor_version=0
+build_version=1
+released_version=false
+released_date=2026-07-16
+
+app_permissions=network,server_ssl_verify
+ui_resolutions=hd
+splash_screen_hd=pkg:/images/splash_hd.png
+fallback_splash_screen_hd=pkg:/images/fallback_splash.png
+
+roku_ads_partner_id=
+ads_url=
+
+min_firmware_version=5.0
+lifetime_tracking_enabled=false
