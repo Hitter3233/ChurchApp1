@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="EventsPage" extends="Group">
+    <interface>
+        <function name="setData" />
+    </interface>
+    
+    <script type="text/brightscript" uri="pkg:/components/EventsPage.brs" />
+    
+    <children>
+        <!-- Background -->
+        <Poster id="background" width="1280" height="720" />
+        
+        <!-- Content Group -->
+        <Group width="1280" height="720">
+            <!-- Title -->
+            <Label id="pageTitle" width="1000" height="80" translation="[140, 50]" 
+                   font="font:LargeSystemFont" 
+                   textColor="0xFFFFFFFF" 
+                   horizAlign="center" 
+                   text="Upcoming Events" />
+            
+            <!-- Events List Container -->
+            <LayoutGroup id="eventsList" layoutDirection="vert" translation="[140, 150]" 
+                         width="1000" height="550" 
+                         itemSpacings="[0, 20]" />
+        </Group>
+    </children>
+</component>
