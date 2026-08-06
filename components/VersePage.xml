@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="VersePage" extends="Group">
+    <interface>
+        <function name="setData" />
+    </interface>
+    
+    <script type="text/brightscript" uri="pkg:/components/VersePage.brs" />
+    
+    <children>
+        <!-- Background -->
+        <Poster id="background" width="1280" height="720" />
+        
+        <!-- Content Group -->
+        <Group width="1280" height="720">
+            <!-- Church Logo -->
+            <Poster id="logo" width="200" height="200" translation="[540, 80]" />
+            
+            <!-- Verse Text -->
+            <Label id="verseText" width="1000" height="300" translation="[140, 320]" 
+                   font="font:LargeSystemFont" 
+                   textColor="0xFFFFFFFF" 
+                   horizAlign="center" 
+                   vertAlign="center" 
+                   wordWrap="true" />
+            
+            <!-- Verse Reference -->
+            <Label id="verseReference" width="1000" height="80" translation="[140, 630]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0xCCCCCCFF" 
+                   horizAlign="center" 
+                   vertAlign="center" />
+        </Group>
+    </children>
+</component>
