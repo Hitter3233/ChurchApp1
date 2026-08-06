@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ContactPage" extends="Group">
+    <interface>
+        <function name="setData" />
+    </interface>
+    
+    <script type="text/brightscript" uri="pkg:/components/ContactPage.brs" />
+    
+    <children>
+        <!-- Background -->
+        <Poster id="background" width="1280" height="720" />
+        
+        <!-- Content Group -->
+        <Group width="1280" height="720">
+            <!-- Title -->
+            <Label id="pageTitle" width="1000" height="80" translation="[140, 50]" 
+                   font="font:LargeSystemFont" 
+                   textColor="0xFFFFFFFF" 
+                   horizAlign="center" 
+                   text="Contact Us" />
+            
+            <!-- Phone Number -->
+            <Label id="phoneLabel" width="400" height="60" translation="[140, 150]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0xCCCCCCFF" 
+                   text="Phone:" />
+            
+            <Label id="phoneNumber" width="600" height="60" translation="[540, 150]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0x00FF00FF" />
+            
+            <!-- Email -->
+            <Label id="emailLabel" width="400" height="60" translation="[140, 220]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0xCCCCCCFF" 
+                   text="Email:" />
+            
+            <Label id="emailAddress" width="600" height="60" translation="[540, 220]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0x00FF00FF" />
+            
+            <!-- Address -->
+            <Label id="addressLabel" width="400" height="60" translation="[140, 290]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0xCCCCCCFF" 
+                   text="Address:" />
+            
+            <Label id="addressText" width="800" height="180" translation="[140, 350]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0x00FF00FF" 
+                   wordWrap="true" />
+            
+            <!-- Service Hours -->
+            <Label id="hoursLabel" width="1000" height="60" translation="[140, 550]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0xCCCCCCFF" 
+                   text="Service Hours:" />
+            
+            <Label id="hoursText" width="1000" height="100" translation="[140, 610]" 
+                   font="font:SmallSystemFont" 
+                   textColor="0xFFFFFFFF" 
+                   wordWrap="true" />
+        </Group>
+    </children>
+</component>
