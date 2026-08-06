@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ClockPage" extends="Group">
+    <interface>
+        <function name="setData" />
+    </interface>
+    
+    <script type="text/brightscript" uri="pkg:/components/ClockPage.brs" />
+    
+    <children>
+        <!-- Background -->
+        <Poster id="background" width="1280" height="720" />
+        
+        <!-- Content Group -->
+        <Group width="1280" height="720">
+            <!-- Large Clock Display -->
+            <Label id="clockDisplay" width="1000" height="300" translation="[140, 200]" 
+                   font="font:LargeSystemFont" 
+                   textColor="0xFFFFFFFF" 
+                   horizAlign="center" 
+                   vertAlign="center" />
+            
+            <!-- Next Service Label -->
+            <Label id="nextServiceLabel" width="1000" height="80" translation="[140, 500]" 
+                   font="font:MediumSystemFont" 
+                   textColor="0xFFFFFFFF" 
+                   horizAlign="center" 
+                   text="Next Service:" />
+            
+            <!-- Next Service Time -->
+            <Label id="nextServiceTime" width="1000" height="100" translation="[140, 580]" 
+                   font="font:LargeSystemFont" 
+                   textColor="0x00FF00FF" 
+                   horizAlign="center" 
+                   vertAlign="center" />
+        </Group>
+    </children>
+</component>
