@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="MainScene" extends="Scene">
+    <interface>
+        <field id="currentPage" type="int" value="0" />
+    </interface>
+    
+    <script type="text/brightscript" uri="pkg:/components/MainScene.brs" />
+    
+    <children>
+        <!-- Background -->
+        <Poster id="background" width="1280" height="720" />
+        
+        <!-- Page Container -->
+        <Group id="pageContainer" width="1280" height="720">
+            <!-- Verse Page -->
+            <VersePage id="versePage" width="1280" height="720" visible="true" />
+            
+            <!-- Clock Page -->
+            <ClockPage id="clockPage" width="1280" height="720" visible="false" />
+            
+            <!-- Contact Page -->
+            <ContactPage id="contactPage" width="1280" height="720" visible="false" />
+            
+            <!-- Events Page -->
+            <EventsPage id="eventsPage" width="1280" height="720" visible="false" />
+            
+            <!-- Announcements Page -->
+            <AnnouncementsPage id="announcementsPage" width="1280" height="720" visible="false" />
+            
+            <!-- Sermons Page -->
+            <SermonsPage id="sermonsPage" width="1280" height="720" visible="false" />
+        </Group>
+    </children>
+</component>
